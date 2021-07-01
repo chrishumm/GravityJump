@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Mock Objects">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Testing Files">
+      <UniqueIdentifier>{8624534b-cc24-4fc8-b2a2-d88f46b5b10a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Testing Lib">
+      <UniqueIdentifier>{3fa82fe6-19ef-4301-ab30-9ff417cb7a9b}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="catch.hpp">
+      <Filter>Testing Lib</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="LevelSceneTests.cpp">
+      <Filter>Testing Files</Filter>
+    </ClCompile>
+    <ClCompile Include="LevelSceneMock.h">
+      <Filter>Mock Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

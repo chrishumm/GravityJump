@@ -1,0 +1,11 @@
+project was compiled using vs 2010
+if tests do not run, paste them into a command window 
+this project was built for cocos2d-x-2.1.5
+
+1. install cocos2d-x-2.1.5 from here http://cocos2d-x.googlecode.com/files/cocos2d-x-2.1.5.zip
+2. create/move project into projects folder
+3. run the game
+
+1. To test (the tests), run the GravityJumpTests.exe in debug folder in a command window
+If the bat file does not work, follow this step.
+
