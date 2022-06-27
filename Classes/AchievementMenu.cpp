@@ -7,13 +7,18 @@
 stringstream convert_to_value_a;
 bool AchievementMenu::init() //first layer player will see
 {
-	glClearColor(1.0, 0.0, 1.0, 1.0);
+	glClearColor(0.0,0.0, 0.0, 0.0);
+
+	CCLayerColor* Container = CCLayerColor::create();
+	Container->setColor(ccc3(255, 0, 255));
+
 	this->setTouchEnabled(true); //allows for touch input from the 
 	return true;
 }
 
 void AchievementMenu::createGUI()
 {
+
 	CCPoint screensize = CCDirector::sharedDirector()->getWinSize(); //stores our sceen size
 	//Now we reate our button, linking to our image and method we want to call when it's pressed
 	pCloseItem = CCMenuItemImage::create("backButton.png", "backButton.png", this, menu_selector(AchievementMenu::backButton));
@@ -43,7 +48,7 @@ void AchievementMenu::createGUI()
 
 	achievement_title = CCLabelTTF::create("Achievements!", "Impact", 32);
 	achievement_title->setPosition(ccp(screensize.x*0.5, screensize.y - 200.0f));
-	achievement_title->setColor(ccc3(0, 102, 100));
+	//achievement_title->setColor(ccc3(0, 102, 100));
 
 	addChild(achievement_title);
 	//We now convert our label to a menu label, adding a menu selector when it's pressed.
@@ -81,7 +86,7 @@ bool AchievementMenu::loadAchievements()
 #endif
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
-	success = m_achievement_manager->loadDb("c:/db.txt");
+	success = m_achievement_manager->loadDb("db.txt");
 #endif
 
 	if (!success)
@@ -91,7 +96,7 @@ bool AchievementMenu::loadAchievements()
 
 		warningMessage->setPosition(ccp(screensize.x*0.5, (screensize.y*0.5) - 30.0f));
 
-		warningMessage->setColor(ccc3(203, 102, 23));
+		//warningMessage->setColor(ccc3(203, 102, 23));
 		addChild(warningMessage);
 
 
@@ -126,7 +131,7 @@ bool AchievementMenu::loadAchievements()
 			temp_s.append(". " + name);
 			convert_to_value_a.str("");
 			m_ach_name[i] = CCLabelTTF::create(temp_s.c_str(), "fonts/04b_19.ttf", 30);
-			m_ach_name[i]->setColor(ccc3(203, 102, 23));
+			//m_ach_name[i]->setColor(ccc3(203, 102, 23));
 			addChild(m_ach_name[i]);
 			created_label++;
 		}

@@ -9,7 +9,10 @@ using namespace extension;
 stringstream convert_to_value;
 bool MetricsMenu::init() //first layer player will see
 {
-	glClearColor(1.0, 0.0, 1.0, 1.0);
+	glClearColor(0.0, 0.0, 0.0, 0.0);
+	CCLayerColor* Container = CCLayerColor::create();
+	Container->setColor(ccc3(255, 0, 255));
+
 	this->setTouchEnabled(true); //allows for touch input from the 
 	return true;
 }
@@ -103,7 +106,7 @@ bool MetricsMenu::loadMetrics()
 #endif
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
-	success = m_metric_manager->loadMetricStoredData("C:/metricdb.txt");
+	success = m_metric_manager->loadMetricStoredData("metricsdb.txt");
 #endif
 
 	if (!success)

@@ -2,7 +2,7 @@
 #include "SceneFactory.h"
 bool Credits::init() //first layer player will see
 {
-	glClearColor(0.0, 0.0, 1.0, 1.0);
+	glClearColor(0.0, 0.0, 0.0, 0.0);
 	this->setTouchEnabled(true); //allows for touch input from the 
 	return true;
 }

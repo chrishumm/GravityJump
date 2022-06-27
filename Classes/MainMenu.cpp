@@ -52,9 +52,9 @@ bool MainMenu::init() //first layer player will see
 	CCMenu* pMenu = CCMenu::create(pCloseItem, NULL); //Now create a menu for our button earlier
 	pMenu->setPosition(ccp(CCDirector::sharedDirector()->getWinSize().width - 20, 20)); //position
 
-	m_gameLabelName = CCLabelTTF::create("Gravity Jump", "Impact", 32);
+	m_gameLabelName = CCLabelTTF::create("Gravity Jump", "Impact", 128);
 	m_gameLabelName->setColor(ccc3(200, 0, 0));
-	m_gameLabelName->setPosition(ccp(screensize.x*0.5, screensize.y - 40));
+	m_gameLabelName->setPosition(ccp(screensize.x*0.5, screensize.y - 90));
 	CCJumpBy* jump_screen_jump = CCJumpBy::create(5000.0f, m_gameLabelName->getPosition(), 10.0f, 10000);
 	addChild(pMenu); //This adds this to our current running scene and displays
 	//addChild(titleMenu);
@@ -69,7 +69,7 @@ bool MainMenu::init() //first layer player will see
 	Container->addChild(titleMenu);
 	
 	CCScrollView* scrollView = CCScrollView::create(screensize, Container);
-	scrollView->setViewSize(ccp(screensize.x*0.9, screensize.y));
+	scrollView->setViewSize(ccp(screensize.x+100, screensize.y));
 
 	scrollView->setBounceable(false);
 	scrollView->setDirection(kCCScrollViewDirectionHorizontal);

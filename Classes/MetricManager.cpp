@@ -12,7 +12,7 @@ using namespace cocos2d;
 MetricManager::MetricManager()
 {
 	m_number_of_metrics = 0;
-	m_db_name = "C:/";
+	m_db_name = "metricsdb.txt";
 }
 
 MetricManager::MetricManager(char* db_text_loc)
@@ -436,7 +436,7 @@ bool MetricManager::loadMetricStoredData(string db_text_loc)
 	if (!hiscore_file.good())
 	{
 	//	CCLog(file_name_concat);
-		CCLog("FAIL LOAD in metrics");
+		CCLog("Fail to load High Scores");
 		return false;
 	}
 	CCLog("SUCESS TO LOAD METRICS");
@@ -636,9 +636,9 @@ bool MetricManager::saveCurrentMetrics(string db_loc)
 
 		db.append("[TIME]" + current_time + "\n");
 	}
-	string txt = m_db_name;
-	txt.append("metricdb.txt");
-	m_db_name = txt;
+	m_db_name = "metricsdb.txt";
+
+	string txt = "metricsdb.txt";
 
 	ofstream saveDb(txt.c_str(), std::ios::app);
 

@@ -1,6 +1,102 @@
-﻿C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1611,5): warning : The referenced project '..\..\..\cocos2dx\proj.win32\cocos2d.vcxproj' does not exist.
-C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1611,5): warning : The referenced project '..\..\..\CocosDenshion\proj.win32\CocosDenshion.vcxproj' does not exist.
-C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1611,5): warning : The referenced project '..\..\..\extensions\proj.win32\libExtensions.vcxproj' does not exist.
-C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1611,5): warning : The referenced project '..\..\..\external\Box2D\proj.win32\Box2D.vcxproj' does not exist.
-C:\Program Files (x86)\MSBuild\14.0\bin\Microsoft.Common.CurrentVersion.targets(1611,5): warning : The referenced project '..\..\..\external\chipmunk\proj.win32\chipmunk.vcxproj' does not exist.
-C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\Platforms\Win32\Microsoft.Cpp.Win32.Targets(153,5): error : Required file "" is missing.
+﻿C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2066,5): warning : The referenced project '..\..\..\cocos2dx\proj.win32\cocos2d.vcxproj' does not exist.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2066,5): warning : The referenced project '..\..\..\CocosDenshion\proj.win32\CocosDenshion.vcxproj' does not exist.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2066,5): warning : The referenced project '..\..\..\extensions\proj.win32\libExtensions.vcxproj' does not exist.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2066,5): warning : The referenced project '..\..\..\external\Box2D\proj.win32\Box2D.vcxproj' does not exist.
+C:\Program Files\Microsoft Visual Studio\2022\Community\MSBuild\Current\Bin\amd64\Microsoft.Common.CurrentVersion.targets(2066,5): warning : The referenced project '..\..\..\external\chipmunk\proj.win32\chipmunk.vcxproj' does not exist.
+  main.cpp
+c:\users\chris\development\gravityjump\proj.win32\main.h(11): fatal error C1083: Cannot open include file: 'CCStdC.h': No such file or directory
+  WorldObject.cpp
+c:\users\chris\development\gravityjump\classes\worldobject.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  UIMessage.cpp
+c:\users\chris\development\gravityjump\classes\uimessage.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  UIGUI.cpp
+c:\users\chris\development\gravityjump\classes\uigui.h(3): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  soundManager.cpp
+c:\users\chris\development\gravityjump\classes\soundmanager.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  SlideObject.cpp
+c:\users\chris\development\gravityjump\classes\worldobject.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  SceneFactory.cpp
+c:\users\chris\development\gravityjump\classes\scenefactory.h(10): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  RenderingComponent.cpp
+c:\users\chris\development\gravityjump\classes\renderingcomponent.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  PhysicsComponent.cpp
+c:\users\chris\development\gravityjump\classes\physicscomponent.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  NormalWall.cpp
+c:\users\chris\development\gravityjump\classes\normalwall.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  MovingPhysicsComponent.cpp
+c:\users\chris\development\gravityjump\classes\physicscomponent.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  MetricsMenu.cpp
+c:\users\chris\development\gravityjump\classes\metricsmenu.h(3): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  MetricManager.cpp
+c:\users\chris\development\gravityjump\classes\metricmanager.cpp(8): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  MenuScene.cpp
+c:\users\chris\development\gravityjump\classes\scenefactory.h(10): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  MenuLayer.cpp
+c:\users\chris\development\gravityjump\classes\menulayer.h(10): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  MainMenu.cpp
+c:\users\chris\development\gravityjump\classes\mainmenu.h(3): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  mainGame.cpp
+c:\users\chris\development\gravityjump\classes\maingame.h(4): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  LoadingScreenScene.cpp
+c:\users\chris\development\gravityjump\classes\scenefactory.h(10): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  LevelScene.cpp
+c:\users\chris\development\gravityjump\classes\scenefactory.h(10): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  LevelOne.cpp
+c:\users\chris\development\gravityjump\classes\levelone.h(8): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  Generating Code...
+  Compiling...
+  LevelLayer.cpp
+c:\users\chris\development\gravityjump\classes\levellayer.h(10): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  LevelEntities.cpp
+c:\users\chris\development\gravityjump\classes\levelentities.cpp(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  LevelChunkFactory.cpp
+c:\users\chris\development\gravityjump\classes\levelchunkfactory.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  LevelChunk.cpp
+c:\users\chris\development\gravityjump\classes\worldobject.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  LevelBlocks.cpp
+  LayerFactory.cpp
+c:\users\chris\development\gravityjump\classes\layerfactory.h(10): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  jump.cpp
+c:\users\chris\development\gravityjump\classes\worldobject.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  inputHandler.cpp
+c:\users\chris\development\gravityjump\classes\worldobject.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  InfiniteGravitySwitching.cpp
+c:\users\chris\development\gravityjump\classes\infinitegravityswitching.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  includes_all.cpp
+  HelloWorldScene.cpp
+c:\users\chris\development\gravityjump\classes\helloworldscene.h(4): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  GravitySwitch.cpp
+c:\users\chris\development\gravityjump\classes\worldobject.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  GLES-Render.cpp
+c:\users\chris\development\gravityjump\classes\gles-render.h(24): fatal error C1083: Cannot open include file: 'Box2D/Box2D.h': No such file or directory
+  FileOperation.cpp
+c:\users\chris\development\gravityjump\classes\fileoperation.cpp(4): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  DestructionBlockPowerup.cpp
+c:\users\chris\development\gravityjump\classes\destructionblockpowerup.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  DefaultPlayer.cpp
+c:\users\chris\development\gravityjump\classes\worldobject.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  GLES-Render.cpp
+c:\users\chris\development\gravityjump\classes\debug\gles-render.h(24): fatal error C1083: Cannot open include file: 'Box2D/Box2D.h': No such file or directory
+  B2DebugDrawLayer.cpp
+c:\users\chris\development\gravityjump\classes\debug\b2debugdrawlayer.h(12): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  credits.cpp
+c:\users\chris\development\gravityjump\classes\credits.h(3): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  ConsentMenu.cpp
+c:\users\chris\development\gravityjump\classes\consentmenu.h(3): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  Generating Code...
+  Compiling...
+  command.cpp
+  collision.cpp
+c:\users\chris\development\gravityjump\classes\worldobject.h(2): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  BadWall.cpp
+c:\users\chris\development\gravityjump\classes\badwall.h(7): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  B2DebugDrawLayer.cpp
+c:\users\chris\development\gravityjump\classes\b2debugdrawlayer.h(12): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  AppDelegate.cpp
+c:\users\chris\development\gravityjump\classes\appdelegate.h(4): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  AchievementMenu.cpp
+c:\users\chris\development\gravityjump\classes\achievementmenu.h(3): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  AchievementManager.cpp
+c:\users\chris\development\gravityjump\classes\achievementmanager.cpp(6): fatal error C1083: Cannot open include file: 'cocos2d.h': No such file or directory
+  Achievement.cpp
+  Generating Code...

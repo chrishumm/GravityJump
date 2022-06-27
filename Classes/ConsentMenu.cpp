@@ -3,7 +3,8 @@
 
 bool ConsentMenu::init() //first layer player will see
 {
-	glClearColor(1.0, 0.0, 1.0, 1.0);
+	CCLayerColor* Container = CCLayerColor::create();
+	Container->setColor(ccc3(255, 0, 255));
 	this->setTouchEnabled(true); //allows for touch input from the 
 	return true;
 }
@@ -52,10 +53,10 @@ bool ConsentMenu::createUIConsent()
 #endif
 
 #if (CC_TARGET_PLATFORM == CC_PLATFORM_WIN32)
-	m_metric_manager->saveCurrentMetrics("c:/");
+	m_metric_manager->saveCurrentMetrics("metricsdb.txt:");
 #endif
 
-	if (m_metric_manager->loadMetricStoredData("C:/metricdb.txt"))
+	if (m_metric_manager->loadMetricStoredData("metricsdb.txt"))
 	{
 		m_metric_manager->getNumOfUniqueMetrics(false);
 		vector<float*> retrievedNumer = m_metric_manager->getAllFloatingValue(5, false);
